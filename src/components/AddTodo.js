@@ -10,11 +10,11 @@ export class AddTodo extends Component {
             [e.target.name] : e.target.value
         })
     }
-
+    
     onSubmit = (e) => {
         e.preventDefault();
         this.props.addTodo(this.state.title);
-        this.setState({title: ''})
+        this.setState({title: ''});
     }
 
   render() {
